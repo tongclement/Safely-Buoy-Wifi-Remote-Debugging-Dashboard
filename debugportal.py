@@ -82,7 +82,7 @@ while True:
     current_long=dftail["Current Long"].values[0]
     home_lat=dftail["Home Lat"].values[0]
     home_long=dftail["Home Long"].values[0]
-    distance_to_home=dftail["Distance to Home"].values[0]
+    distance_to_home=dftail["Distance To Home"].values[0]
     print(type(target_hdg))
 
 
