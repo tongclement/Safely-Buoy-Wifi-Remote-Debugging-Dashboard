@@ -114,7 +114,7 @@ while True:
 
         kpi5.metric(
             label="Distance To Home (m)",
-            value=calculated_distnace_to_home,
+            value=f"{round(calculated_distnace_to_home,3)}m",
         )
 
         kpi6, kpi7, kpi8, kpi9, kpi10 = st.columns(5)
@@ -125,7 +125,7 @@ while True:
 
         kpi7.metric(
             label="Rudder Deflection",
-            value=round(rudder_config,3),
+            value=rudder_config,
             help="50 = neutral"
         )
 
