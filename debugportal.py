@@ -161,10 +161,10 @@ while True:
             fig6 = px.line(data_frame=telemdf, x="time", y="Target vel")
             st.write(fig6)
 
-        fig_col7 = st.columns(1)
+        fig_col7, fig_col8, fig_col9 = st.columns(3)
         with fig_col7:
             st.markdown("### Rudder Deflection")
-            fig7 = px.line(data_frame=telemdf, x="time", y="Rudder Config")
+            fig7 = px.line(data_frame=telemdf, x="time", y="Rudder Config Var")
             st.write(fig7)
 
 
