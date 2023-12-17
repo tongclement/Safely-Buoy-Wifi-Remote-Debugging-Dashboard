@@ -17,6 +17,7 @@ st.set_page_config(
 # read csv from a github repo
 #dataset_url = "https://raw.githubusercontent.com/Lexie88rus/bank-marketing-analysis/master/bank.csv"
 
+time.sleep(5) #allow user to switch from public to local network
 
 # get df
 telemetry = requests.get('http://192.168.4.1')
