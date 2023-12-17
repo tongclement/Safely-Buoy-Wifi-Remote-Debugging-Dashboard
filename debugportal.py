@@ -55,7 +55,7 @@ while True:
     telemetryjson.update({"time": datetime.datetime.utcnow().isoformat()})
 
     # Add distance to home point calculated by python
-    current_lat = telemetryjson.get("Current Lat")
+    """current_lat = telemetryjson.get("Current Lat")
     current_long = telemetryjson.get("Current Long")
     home_lat = telemetryjson.get("Home Lat")
     home_long = telemetryjson.get("Home Long")
@@ -63,7 +63,7 @@ while True:
     home_pos = (home_lat, home_long)
     print(current_pos)
     calculated_distnace_to_home = geopy.distance.geodesic(current_pos, home_pos).m
-    telemetryjson.update({"Dist To Home": calculated_distnace_to_home})
+    telemetryjson.update({"Dist To Home": calculated_distnace_to_home})"""
 
     print(telemetryjson)
 
@@ -82,6 +82,7 @@ while True:
     current_long=dftail["Current Long"].values[0]
     home_lat=dftail["Home Lat"].values[0]
     home_long=dftail["Home Long"].values[0]
+    distance_to_home=dftail["Distance to Home"].values[0]
     print(type(target_hdg))
 
 
@@ -109,12 +110,12 @@ while True:
 
         kpi4.metric(
             label="Target Velocity",
-            value=f"{target_vel} m/s",
+            value=f"{round(target_vel,3)} m/s",
         )
 
         kpi5.metric(
             label="Distance To Home (m)",
-            value=f"{round(calculated_distnace_to_home,3)}m",
+            value=f"{round(distance_to_home,3)}m",
         )
 
         kpi6, kpi7, kpi8, kpi9, kpi10 = st.columns(5)
@@ -133,7 +134,7 @@ while True:
         fig_col1, fig_col2, fig_col3 = st.columns(3)
         with fig_col1:
             st.markdown("### Distance To Home")
-            fig = px.line(data_frame=telemdf, x="time", y="Dist To Home",)
+            fig = px.line(data_frame=telemdf, x="time", y="Distance To Home",)
             st.write(fig)
 
         with fig_col2:
@@ -149,7 +150,7 @@ while True:
         fig_col4, fig_col5, fig_col6 = st.columns(3)
         with fig_col4:
             st.markdown("### Motor Power Setting")
-            fig4 = px.line(data_frame=telemdf, x="time", y="Dist To Home")
+            fig4 = px.line(data_frame=telemdf, x="time", y="Current Motor Setting")
             st.write(fig4)
 
         with fig_col5:
