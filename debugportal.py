@@ -125,7 +125,7 @@ while True:
 
         kpi7.metric(
             label="Rudder Deflection",
-            value=rudder_config,
+            value=round(rudder_config,3),
             help="50 = neutral"
         )
 
