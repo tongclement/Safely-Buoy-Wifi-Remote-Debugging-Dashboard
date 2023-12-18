@@ -42,6 +42,20 @@ telemdf = pd.DataFrame(telemetryjson, index=[datetime.datetime.now().isoformat()
 # dashboard title
 st.title("SafelyBuoy Real Time Dashboard")
 
+
+
+def estop():
+    requests.get('http://192.168.4.1/estop')
+
+def on():
+    requests.get('http://192.168.4.1/on')
+
+buttonholder = st.empty()
+with buttonholder.container():
+    stopbtn, gobtn = st.columns(2)
+    stopbtn = st.button(on_click=estop,label="Disable Motor")
+    gobtn = st.button(on_click=on,label="Enable Motor and Reset Home Point")
+
 # top-level filters
 
 # creating a single-element container
