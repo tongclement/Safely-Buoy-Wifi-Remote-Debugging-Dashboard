@@ -25,6 +25,7 @@ print(telemetry.text)
 telemetryjson=telemetry.json()
 telemetryjson.update({"time":datetime.datetime.utcnow().isoformat()})
 
+"""
 #Add distance to home point calculated by python
 current_lat=telemetryjson.get("Current Lat")
 current_long=telemetryjson.get("Current Long")
@@ -33,11 +34,9 @@ home_long=telemetryjson.get("Home Long")
 current_pos = (current_lat, current_long)
 home_pos = (home_lat, home_long)
 print(current_pos)
-calculated_distnace_to_home=geopy.distance.geodesic(current_pos, home_pos).m
-telemetryjson.update({"Dist To Home":calculated_distnace_to_home})
-
 print(telemetryjson)
 telemdf = pd.DataFrame(telemetryjson, index=[datetime.datetime.now().isoformat()])
+"""
 
 # dashboard title
 st.title("SafelyBuoy Real Time Dashboard")
