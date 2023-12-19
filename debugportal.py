@@ -50,11 +50,15 @@ def estop():
 def on():
     requests.get('http://192.168.4.1/on')
 
+def savecsv():
+    telemdf.to_csv('telemetrylog.csv')
+
 buttonholder = st.empty()
 with buttonholder.container():
-    stopbtn, gobtn = st.columns(2)
+    stopbtn, gobtn, savebtn = st.columns(3)
     stopbtn = st.button(on_click=estop,label="Disable Motor")
     gobtn = st.button(on_click=on,label="Enable Motor and Reset Home Point")
+    gobtn = st.button(on_click=savecsv, label="save telemtry to csv")
 
 # top-level filters
 
