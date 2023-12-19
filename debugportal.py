@@ -50,7 +50,8 @@ def on():
     requests.get('http://192.168.4.1/on')
 
 def savecsv():
-    telemdf.to_csv('telemetrylog.csv')
+    current_datetime = datetime.datetime.now().isoformat()
+    telemdf.to_csv(f'/telemetry/telem-{current_datetime}.csv')
 
 buttonholder = st.empty()
 with buttonholder.container():
