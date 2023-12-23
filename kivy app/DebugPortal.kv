@@ -1,0 +1,29 @@
+<Dashboard>:
+    Label:
+        id: current_hdg
+        text: "Current Heading: N/A"
+    Label:
+        id: target_hdg
+        text: "Target Heading: N/A"
+    Label:
+        id: current_vel
+        text: "Current Velocity: N/A"
+    Label:
+        id: target_vel
+        text: "Target Velocity: N/A"
+    Label:
+        id: distance_to_home
+        text: "Distance To Home: N/A"
+    Label:
+        id: motor_power
+        text: "Motor Power Setting: N/A"
+    Label:
+        id: rudder_deflection
+        text: "Rudder Deflection: N/A"
+
+    Button:
+        text: "Disable Motor"
+        on_press: app.root.estop(self)
+    Button:
+        text: "Enable Motor and Reset Home Point"
+        on_press: app.root.on(self)
