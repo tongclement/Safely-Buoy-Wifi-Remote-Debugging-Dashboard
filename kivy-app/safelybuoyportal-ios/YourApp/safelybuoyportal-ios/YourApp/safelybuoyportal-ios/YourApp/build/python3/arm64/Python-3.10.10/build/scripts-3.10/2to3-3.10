@@ -1,0 +1,5 @@
+#!/Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/dist/root/python3/bin/python3.10
+import sys
+from lib2to3.main import main
+
+sys.exit(main("lib2to3.fixes"))

@@ -1,0 +1,52 @@
+name: Python package
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    name: "build (${{ matrix.runs_on }}, ${{ matrix.python }} - Cython ${{ matrix.cython }})"
+    runs-on: ${{ matrix.runs_on }}
+    strategy:
+      matrix:
+        runs_on:
+          - macos-latest
+          - apple-silicon-m1
+        python:
+          - "3.7"
+          - "3.8"
+          - "3.9"
+          - "3.10"
+          - "3.11"
+          - "3.12"
+        cython:
+          - "<3"
+          - ">=3"
+        exclude:
+          - runs_on: apple-silicon-m1
+            python: "3.7"
+          - runs_on: apple-silicon-m1
+            python: "3.8"
+          - runs_on: apple-silicon-m1
+            python: "3.9"
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Python ${{ matrix.python }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python }}
+
+    - name: Force Cython version
+      run: sed -i.bak 's/"Cython"/"Cython${{matrix.cython}}"/' pyproject.toml
+
+    - name: Install project
+      run: |
+        pip install cython pytest setuptools
+        pip install .
+
+    - name: Test with pytest
+      run: |
+        make test_lib
+        make
+        make tests

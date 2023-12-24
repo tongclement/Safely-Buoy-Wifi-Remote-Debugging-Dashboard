@@ -1,0 +1,47 @@
+{
+  "_buildCommand2" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildAndRun"
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "4f2688c5217c70d0fc79b5651efe8e9f90c982c55d2dd1767fcf154589e73f89"
+    }
+  ],
+  "containerPath" : "/Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/x86_64/SDL2-2.24.1/Xcode/SDL/SDL.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "configurationName" : "Release",
+    "overrides" : {
+      "commandLine" : {
+        "table" : {
+          "ARCHS" : "x86_64",
+          "BITCODE_GENERATION_MODE" : "bitcode",
+          "CC" : "/var/folders/gl/qthvj2sj4_s98882m2b8pl880000gn/T/tmpy483jnqw",
+          "IDEBuildOperationMaxNumberOfConcurrentCompileTasks" : "8",
+          "ONLY_ACTIVE_ARCH" : "NO",
+          "SDKROOT" : "iphonesimulator16.0"
+        }
+      },
+      "synthesized" : {
+        "table" : {
+          "ACTION" : "build",
+          "COLOR_DIAGNOSTICS" : "YES",
+          "diagnostic_message_length" : "80",
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : false,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : false
+}

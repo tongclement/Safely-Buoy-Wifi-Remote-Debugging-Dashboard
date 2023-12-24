@@ -1,0 +1,5 @@
+#!/Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/dist/hostpython3/bin/python3.10
+
+from idlelib.pyshell import main
+if __name__ == '__main__':
+    main()

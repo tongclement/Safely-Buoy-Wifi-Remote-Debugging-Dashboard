@@ -1,0 +1,2 @@
+Target dependency graph (1 target)
+Static Library in SDL_ttf, no dependencies

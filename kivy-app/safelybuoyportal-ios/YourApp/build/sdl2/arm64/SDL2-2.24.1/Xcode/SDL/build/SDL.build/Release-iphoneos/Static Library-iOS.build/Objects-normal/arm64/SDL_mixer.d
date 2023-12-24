@@ -1,0 +1,24 @@
+dependencies: \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/src/audio/SDL_mixer.c \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/src/audio/../SDL_internal.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/src/audio/../dynapi/SDL_dynapi.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/include/SDL_config.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/include/SDL_platform.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/include/begin_code.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/include/close_code.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/include/SDL_config_iphoneos.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/include/SDL_assert.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/include/SDL_stdinc.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/include/SDL_log.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/include/SDL_cpuinfo.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/include/SDL_timer.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/include/SDL_error.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/include/SDL_audio.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/include/SDL_endian.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/include/SDL_mutex.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/include/SDL_thread.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/include/SDL_atomic.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/include/SDL_rwops.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/src/audio/SDL_sysaudio.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/src/audio/../SDL_dataqueue.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/src/audio/./SDL_audio_c.h

@@ -1,0 +1,13 @@
+# See: man pkg-config
+prefix=/Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/dist/root/python3
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: Python
+Description: Build a C extension for Python
+Requires:
+Version: 3.10
+Libs.private: -ldl  -lpthread -lm
+Libs:
+Cflags: -I${includedir}/python3.10

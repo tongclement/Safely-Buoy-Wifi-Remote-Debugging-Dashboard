@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00D5457B810B80C557423664 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77946C88AC79C1248F924D2 /* WebKit.framework */; };
+		01532DAA137C099F0076F6BF /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 01532DA9137C099F0076F6BF /* icon.png */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		22DA40D5A9356D6FEE619FFA /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17CB4A47ADC5648AD4EAC57F /* GameController.framework */; };
+		2C4148B0BB9AB25DBD713CE6 /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F63460CAAB8C6EBC117B5B0 /* libpng.a */; };
+		2CB5F34717D5233A006187AB /* bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB5F34617D5233A006187AB /* bridge.m */; };
+		3A584462B8490888C2010592 /* libpyobjus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B91949888DCA6DD6A0743748 /* libpyobjus.a */; };
+		3ECF4B6E87BEBA4FF784416B /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3B4F93AA14FD6D5D331D7C /* Accelerate.framework */; };
+		41364BBABAFAC97DF38C7268 /* libsdl2_mixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6464E00B710E13AAEFDE2AE /* libsdl2_mixer.a */; };
+		451544CDBB5EE71E5C443FA8 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA944738CF5D1426DD4BDD1 /* libc++.tbd */; };
+		4F844BB391266756D411D452 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B844F6890E8C515C1BD2D92 /* Photos.framework */; };
+		59738AB51A8BB5D8001B2C0C /* lib in Resources */ = {isa = PBXBuildFile; fileRef = 59738AB41A8BB5D8001B2C0C /* lib */; };
+		59738ABB1A8E19AA001B2C0C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59738ABA1A8E19AA001B2C0C /* Images.xcassets */; };
+		59994E3B148E85C800863906 /* YourApp in Resources */ = {isa = PBXBuildFile; fileRef = 59994E3A148E85C800863906 /* YourApp */; };
+		59FDEA8B21E7D34E004E6ECE /* include in Resources */ = {isa = PBXBuildFile; fileRef = 59FDEA8A21E7D34E004E6ECE /* include */; };
+		6DE5494899E8F633599A106C /* libsdl2_ttf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C848908AD3E8EB42323FF1 /* libsdl2_ttf.a */; };
+		708049B4A3D9961FE8897981 /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE147CF9929A157C0B96FF0 /* CoreHaptics.framework */; };
+		78F84808801A27196B927160 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65B34A4BBB1985EED583ED50 /* libssl.a */; };
+		806047FEBCF03E16A70C0E89 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36474282AD856EE99647B5B4 /* CoreMotion.framework */; };
+		83C74586B08F1742460F9CB4 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45FB4B5E88BA5CD6814A8208 /* OpenGLES.framework */; };
+		966C4EAE8A3DD6C285354E4E /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD44918836F9E41FA9EA960 /* libffi.a */; };
+		A7184FB2B3E728F089F6DDBB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BB894183B31E1ACF4D9DD28B /* libz.tbd */; };
+		A86244F9B3E208043B53A135 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AA4CE89A18DB0D9E64B1D3 /* MessageUI.framework */; };
+		AC5106F52959EE4E00655416 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5106F42959EE4E00655416 /* Launch Screen.storyboard */; };
+		B09D4A63999686375BD93438 /* libios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 798A434D8450801C1A051604 /* libios.a */; };
+		BB134563AF38CA9489E09E09 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C28B4A458C507C1D2AAD8373 /* MobileCoreServices.framework */; };
+		BFB44D94824126F4CB1C3C2F /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C94CEA91F8B6EE6CFDCFE7 /* libbz2.tbd */; };
+		C0D7470CBCF129945B774518 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA846058A894ADC52710397 /* AVFoundation.framework */; };
+		C7544A0A95BA08F503301582 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A741B485F8AD770017B43A /* CoreGraphics.framework */; };
+		C9094FB4B24D4D96F2120458 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D5248CA8D3826FD533C5BC6 /* libcrypto.a */; };
+		CAC34ADA93DA34BC2614FDCF /* libpython3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E240412582D944A05EE56928 /* libpython3.a */; };
+		D8504C6094092B602488E179 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF64C32B24992798F6F9568 /* UIKit.framework */; };
+		DC194F748040EF434F6C453F /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56C04F659DE0335A964350B8 /* CoreMedia.framework */; };
+		E01C4647B46B057535FF841A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E244AAA333AC1A749E5729 /* libsqlite3.tbd */; };
+		E2C34EB59246801AC510E314 /* libsdl2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E77E4A3A8F71D2CC66FD45B0 /* libsdl2.a */; };
+		E87F408E9D068BE5F4669779 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B3410F84E349800D89868E /* Metal.framework */; };
+		EC2542E38FBF38199D9FD218 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE846BB8F66EE381CDC7552 /* CoreVideo.framework */; };
+		EFA34EA19A198030B43F6FB9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA245A1A786C1F651BB5547 /* QuartzCore.framework */; };
+		F30C43358BF78106F0D8FB02 /* libsdl2_image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D64F2AAC1234CA188C72D7 /* libsdl2_image.a */; };
+		F5E24409A1B5F3A7450CEB26 /* libkivy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 058F4F6898398062231F6213 /* libkivy.a */; };
+		F99645C5B0A373DC898F9AD8 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D014C65986780A1BD62EC91 /* ImageIO.framework */; };
+		FE6045CA972D8884AAD06BBF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44684EDE931DE98919E1112D /* AudioToolbox.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01532DA9137C099F0076F6BF /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		02C848908AD3E8EB42323FF1 /* libsdl2_ttf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsdl2_ttf.a; path = ../dist/lib/libsdl2_ttf.a; sourceTree = SOURCE_ROOT; };
+		058F4F6898398062231F6213 /* libkivy.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libkivy.a; path = ../dist/lib/libkivy.a; sourceTree = SOURCE_ROOT; };
+		0FD44918836F9E41FA9EA960 /* libffi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libffi.a; path = ../dist/lib/libffi.a; sourceTree = SOURCE_ROOT; };
+		17CB4A47ADC5648AD4EAC57F /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.0.sdk/System/Library/Frameworks/GameController.framework; sourceTree = "<absolute>"; };
+		1D6058910D05DD3D006BFB54 /* safelybuoyportal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = safelybuoyportal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2CB5F34517D5233A006187AB /* bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = SOURCE_ROOT; };
+		2CB5F34617D5233A006187AB /* bridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bridge.m; sourceTree = SOURCE_ROOT; };
+		2F63460CAAB8C6EBC117B5B0 /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpng.a; path = ../dist/lib/libpng.a; sourceTree = SOURCE_ROOT; };
+		36474282AD856EE99647B5B4 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = "<absolute>"; };
+		3A3B4F93AA14FD6D5D331D7C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
+		3BF64C32B24992798F6F9568 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = "<absolute>"; };
+		3CA846058A894ADC52710397 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = "<absolute>"; };
+		3D014C65986780A1BD62EC91 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.0.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = "<absolute>"; };
+		3FA944738CF5D1426DD4BDD1 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.0.sdk/usr/lib/libc++.tbd"; sourceTree = "<absolute>"; };
+		44684EDE931DE98919E1112D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.0.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
+		45FB4B5E88BA5CD6814A8208 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.0.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = "<absolute>"; };
+		56C04F659DE0335A964350B8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.0.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = "<absolute>"; };
+		59738AB41A8BB5D8001B2C0C /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lib; path = "/Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/dist/root/python3/lib"; sourceTree = "<group>"; };
+		59738ABA1A8E19AA001B2C0C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = safelybuoyportal/Images.xcassets; sourceTree = "<group>"; };
+		59994E3A148E85C800863906 /* YourApp */ = {isa = PBXFileReference; lastKnownFileType = folder; path = YourApp; sourceTree = "<group>"; };
+		59FDEA8A21E7D34E004E6ECE /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; name = include; path = "/Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/dist/root/python3/include"; sourceTree = "<group>"; };
+		5B844F6890E8C515C1BD2D92 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.0.sdk/System/Library/Frameworks/Photos.framework; sourceTree = "<absolute>"; };
+		65B34A4BBB1985EED583ED50 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = ../dist/lib/libssl.a; sourceTree = SOURCE_ROOT; };
+		70B3410F84E349800D89868E /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.0.sdk/System/Library/Frameworks/Metal.framework; sourceTree = "<absolute>"; };
+		72D64F2AAC1234CA188C72D7 /* libsdl2_image.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsdl2_image.a; path = ../dist/lib/libsdl2_image.a; sourceTree = SOURCE_ROOT; };
+		73A741B485F8AD770017B43A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = "<absolute>"; };
+		798A434D8450801C1A051604 /* libios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libios.a; path = ../dist/lib/libios.a; sourceTree = SOURCE_ROOT; };
+		7D5248CA8D3826FD533C5BC6 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = ../dist/lib/libcrypto.a; sourceTree = SOURCE_ROOT; };
+		8D1107310486CEB800E47090 /* safelybuoyportal-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "safelybuoyportal-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		8DE147CF9929A157C0B96FF0 /* CoreHaptics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreHaptics.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.0.sdk/System/Library/Frameworks/CoreHaptics.framework; sourceTree = "<absolute>"; };
+		A1E244AAA333AC1A749E5729 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.0.sdk/usr/lib/libsqlite3.tbd; sourceTree = "<absolute>"; };
+		AC5106F42959EE4E00655416 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "Storyboards/Launch Screen.storyboard"; sourceTree = "<group>"; };
+		B77946C88AC79C1248F924D2 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.0.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
+		B91949888DCA6DD6A0743748 /* libpyobjus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpyobjus.a; path = ../dist/lib/libpyobjus.a; sourceTree = SOURCE_ROOT; };
+		BB894183B31E1ACF4D9DD28B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.0.sdk/usr/lib/libz.tbd; sourceTree = "<absolute>"; };
+		C28B4A458C507C1D2AAD8373 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = "<absolute>"; };
+		D6464E00B710E13AAEFDE2AE /* libsdl2_mixer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsdl2_mixer.a; path = ../dist/lib/libsdl2_mixer.a; sourceTree = SOURCE_ROOT; };
+		DAE846BB8F66EE381CDC7552 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.0.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		E240412582D944A05EE56928 /* libpython3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpython3.a; path = ../dist/lib/libpython3.a; sourceTree = SOURCE_ROOT; };
+		E5AA4CE89A18DB0D9E64B1D3 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.0.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = "<absolute>"; };
+		E77E4A3A8F71D2CC66FD45B0 /* libsdl2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsdl2.a; path = ../dist/lib/libsdl2.a; sourceTree = SOURCE_ROOT; };
+		F8C94CEA91F8B6EE6CFDCFE7 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.0.sdk/usr/lib/libbz2.tbd; sourceTree = "<absolute>"; };
+		FAA245A1A786C1F651BB5547 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7544A0A95BA08F503301582 /* CoreGraphics.framework in Frameworks */,
+				FE6045CA972D8884AAD06BBF /* AudioToolbox.framework in Frameworks */,
+				D8504C6094092B602488E179 /* UIKit.framework in Frameworks */,
+				DC194F748040EF434F6C453F /* CoreMedia.framework in Frameworks */,
+				EC2542E38FBF38199D9FD218 /* CoreVideo.framework in Frameworks */,
+				806047FEBCF03E16A70C0E89 /* CoreMotion.framework in Frameworks */,
+				BB134563AF38CA9489E09E09 /* MobileCoreServices.framework in Frameworks */,
+				708049B4A3D9961FE8897981 /* CoreHaptics.framework in Frameworks */,
+				A86244F9B3E208043B53A135 /* MessageUI.framework in Frameworks */,
+				F99645C5B0A373DC898F9AD8 /* ImageIO.framework in Frameworks */,
+				4F844BB391266756D411D452 /* Photos.framework in Frameworks */,
+				E87F408E9D068BE5F4669779 /* Metal.framework in Frameworks */,
+				00D5457B810B80C557423664 /* WebKit.framework in Frameworks */,
+				3ECF4B6E87BEBA4FF784416B /* Accelerate.framework in Frameworks */,
+				22DA40D5A9356D6FEE619FFA /* GameController.framework in Frameworks */,
+				EFA34EA19A198030B43F6FB9 /* QuartzCore.framework in Frameworks */,
+				C0D7470CBCF129945B774518 /* AVFoundation.framework in Frameworks */,
+				83C74586B08F1742460F9CB4 /* OpenGLES.framework in Frameworks */,
+				A7184FB2B3E728F089F6DDBB /* libz.tbd in Frameworks */,
+				E01C4647B46B057535FF841A /* libsqlite3.tbd in Frameworks */,
+				451544CDBB5EE71E5C443FA8 /* libc++.tbd in Frameworks */,
+				BFB44D94824126F4CB1C3C2F /* libbz2.tbd in Frameworks */,
+				B09D4A63999686375BD93438 /* libios.a in Frameworks */,
+				F30C43358BF78106F0D8FB02 /* libsdl2_image.a in Frameworks */,
+				F5E24409A1B5F3A7450CEB26 /* libkivy.a in Frameworks */,
+				2C4148B0BB9AB25DBD713CE6 /* libpng.a in Frameworks */,
+				C9094FB4B24D4D96F2120458 /* libcrypto.a in Frameworks */,
+				78F84808801A27196B927160 /* libssl.a in Frameworks */,
+				3A584462B8490888C2010592 /* libpyobjus.a in Frameworks */,
+				E2C34EB59246801AC510E314 /* libsdl2.a in Frameworks */,
+				6DE5494899E8F633599A106C /* libsdl2_ttf.a in Frameworks */,
+				41364BBABAFAC97DF38C7268 /* libsdl2_mixer.a in Frameworks */,
+				966C4EAE8A3DD6C285354E4E /* libffi.a in Frameworks */,
+				CAC34ADA93DA34BC2614FDCF /* libpython3.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2CB5F34517D5233A006187AB /* bridge.h */,
+				2CB5F34617D5233A006187AB /* bridge.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* safelybuoyportal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				AC5106F32959EE3800655416 /* Storyboards */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				59994E3A148E85C800863906 /* YourApp */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				59738ABA1A8E19AA001B2C0C /* Images.xcassets */,
+				59738AB41A8BB5D8001B2C0C /* lib */,
+				59FDEA8A21E7D34E004E6ECE /* include */,
+				01532DA9137C099F0076F6BF /* icon.png */,
+				8D1107310486CEB800E47090 /* safelybuoyportal-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73A741B485F8AD770017B43A /* CoreGraphics.framework */,
+				44684EDE931DE98919E1112D /* AudioToolbox.framework */,
+				3BF64C32B24992798F6F9568 /* UIKit.framework */,
+				56C04F659DE0335A964350B8 /* CoreMedia.framework */,
+				DAE846BB8F66EE381CDC7552 /* CoreVideo.framework */,
+				36474282AD856EE99647B5B4 /* CoreMotion.framework */,
+				C28B4A458C507C1D2AAD8373 /* MobileCoreServices.framework */,
+				8DE147CF9929A157C0B96FF0 /* CoreHaptics.framework */,
+				E5AA4CE89A18DB0D9E64B1D3 /* MessageUI.framework */,
+				3D014C65986780A1BD62EC91 /* ImageIO.framework */,
+				5B844F6890E8C515C1BD2D92 /* Photos.framework */,
+				70B3410F84E349800D89868E /* Metal.framework */,
+				B77946C88AC79C1248F924D2 /* WebKit.framework */,
+				3A3B4F93AA14FD6D5D331D7C /* Accelerate.framework */,
+				17CB4A47ADC5648AD4EAC57F /* GameController.framework */,
+				FAA245A1A786C1F651BB5547 /* QuartzCore.framework */,
+				3CA846058A894ADC52710397 /* AVFoundation.framework */,
+				45FB4B5E88BA5CD6814A8208 /* OpenGLES.framework */,
+				BB894183B31E1ACF4D9DD28B /* libz.tbd */,
+				A1E244AAA333AC1A749E5729 /* libsqlite3.tbd */,
+				3FA944738CF5D1426DD4BDD1 /* libc++.tbd */,
+				F8C94CEA91F8B6EE6CFDCFE7 /* libbz2.tbd */,
+				798A434D8450801C1A051604 /* libios.a */,
+				72D64F2AAC1234CA188C72D7 /* libsdl2_image.a */,
+				058F4F6898398062231F6213 /* libkivy.a */,
+				2F63460CAAB8C6EBC117B5B0 /* libpng.a */,
+				7D5248CA8D3826FD533C5BC6 /* libcrypto.a */,
+				65B34A4BBB1985EED583ED50 /* libssl.a */,
+				B91949888DCA6DD6A0743748 /* libpyobjus.a */,
+				E77E4A3A8F71D2CC66FD45B0 /* libsdl2.a */,
+				02C848908AD3E8EB42323FF1 /* libsdl2_ttf.a */,
+				D6464E00B710E13AAEFDE2AE /* libsdl2_mixer.a */,
+				0FD44918836F9E41FA9EA960 /* libffi.a */,
+				E240412582D944A05EE56928 /* libpython3.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC5106F32959EE3800655416 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AC5106F42959EE4E00655416 /* Launch Screen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* safelybuoyportal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "safelybuoyportal" */;
+			buildPhases = (
+				113D17E2153E3DB5001310A5 /* ShellScript */,
+				113D17E2153E3DB5001310A6 /* ShellScript */,
+				113D17E2153E3DB5001310A7 /* ShellScript */,
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = safelybuoyportal;
+			productName = safelybuoyportal;
+			productReference = 1D6058910D05DD3D006BFB54 /* safelybuoyportal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = L4SZ886G39;
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "safelybuoyportal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* safelybuoyportal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59738AB51A8BB5D8001B2C0C /* lib in Resources */,
+				AC5106F52959EE4E00655416 /* Launch Screen.storyboard in Resources */,
+				59FDEA8B21E7D34E004E6ECE /* include in Resources */,
+				59738ABB1A8E19AA001B2C0C /* Images.xcassets in Resources */,
+				01532DAA137C099F0076F6BF /* icon.png in Resources */,
+				59994E3B148E85C800863906 /* YourApp in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		113D17E2153E3DB5001310A5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "rsync -av --delete \"/Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app\"/ \"$PROJECT_DIR\"/YourApp";
+		};
+		113D17E2153E3DB5001310A6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "/Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/dist/hostpython3/bin/python -m compileall -f -b \"$PROJECT_DIR\"/YourApp";
+		};
+		113D17E2153E3DB5001310A7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "find \"$PROJECT_DIR\"/YourApp/ -regex '.*\\.py' -delete";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				2CB5F34717D5233A006187AB /* bridge.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = L4SZ886G39;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/dist/frameworks",
+					/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.0.sdk/System/Library/Frameworks,
+					"$(inherited)",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/dist/root/python3/include/python3.10/**",
+					"/Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/dist/include/common/sdl2",
+				);
+				INFOPLIST_FILE = "safelybuoyportal-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/dist/lib",
+					/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.0.sdk/usr/lib,
+					"$(SRCROOT)/../dist/lib",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = safelybuoyportal;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = L4SZ886G39;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/dist/frameworks",
+					/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.0.sdk/System/Library/Frameworks,
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/dist/root/python3/include/python3.10/**",
+					"/Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/dist/include/common/sdl2",
+				);
+				INFOPLIST_FILE = "safelybuoyportal-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/dist/lib",
+					/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.0.sdk/usr/lib,
+					"$(SRCROOT)/../dist/lib",
+				);
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = safelybuoyportal;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				STRIP_INSTALLED_PRODUCT = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DEAD_CODE_STRIPPING = NO;
+				ENABLE_BITCODE = NO;
+				USER_HEADER_SEARCH_PATHS = "/Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/dist/root/include/";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DEAD_CODE_STRIPPING = NO;
+				ENABLE_BITCODE = NO;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				USER_HEADER_SEARCH_PATHS = "/Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/dist/root/include/";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "safelybuoyportal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "safelybuoyportal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
