@@ -1,0 +1,24 @@
+dependencies: \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/src/render/software/SDL_blendpoint.c \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/src/render/software/../../SDL_internal.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/src/render/software/../../dynapi/SDL_dynapi.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/include/SDL_config.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/include/SDL_platform.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/include/begin_code.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/include/close_code.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/include/SDL_config_iphoneos.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/include/SDL_assert.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/include/SDL_stdinc.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/include/SDL_log.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/src/render/software/SDL_draw.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/src/render/software/../../video/SDL_blit.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/src/render/software/../../video/../SDL_internal.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/include/SDL_cpuinfo.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/include/SDL_endian.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/include/SDL_surface.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/include/SDL_pixels.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/include/SDL_rect.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/include/SDL_error.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/include/SDL_rwops.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/include/SDL_blendmode.h \
+  /Users/clementtongpersonal/Desktop/Programming/2023/safelybuoy-debug2/safelybuoy-debug2/kivy-app/build/sdl2/arm64/SDL2-2.24.1/src/render/software/SDL_blendpoint.h
