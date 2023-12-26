@@ -37,7 +37,7 @@ print(current_pos)
 print(telemetryjson)
 telemdf = pd.DataFrame(telemetryjson, index=[datetime.datetime.now().isoformat()])
 """
-
+telemdf = pd.DataFrame(telemetryjson, index=[datetime.datetime.now().isoformat()])
 # dashboard title
 st.title("SafelyBuoy Real Time Dashboard")
 
