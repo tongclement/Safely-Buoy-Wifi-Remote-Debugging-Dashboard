@@ -2,7 +2,10 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:fl_chart/fl_chart.dart';
+import 'package:csv/csv.dart';
 import 'dart:convert';
+
+import 'package:intl/intl.dart';
 
 void main() {
   runApp(MyApp());
@@ -49,7 +52,12 @@ class _MyHomePageState extends State<MyHomePage> {
   List<FlSpot> currentvelocityData = [];
   List<FlSpot> targetvelocityData = [];
   List<FlSpot> motorData = [];
+  List<FlSpot> HomeLatData = [];
+  List<FlSpot> HomeLongData = [];
+  List<FlSpot> RudderConfigData = [];
   double time = 0;
+  String utctimenowstr = "";
+
   // Declare KPI state variables
   double currentHeading = 0.0;
   double targetHeading = 0.0;
@@ -57,13 +65,17 @@ class _MyHomePageState extends State<MyHomePage> {
   double targetVelocity = 0.0;
   double motorPowerSetting = 0.0;
   double distanceToHome = 0.0;
+  double HomeLat = 0.0;
+  double HomeLong = 0.0;
+  double RudderConfig = 0.0;
 
   @override
   void initState() {
     super.initState();
     Timer.periodic(Duration(seconds: 1), (timer) {
       fetchTelemetryData();
-      time += 1;
+      time += 0.5;
+      utctimenowstr = DateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'").format(DateTime.now().toUtc()); // not currently used
     });
   }
 
@@ -82,6 +94,12 @@ class _MyHomePageState extends State<MyHomePage> {
           .add(FlSpot(time, double.parse(telemetry['Target vel'].toString())));
       motorData.add(FlSpot(
           time, double.parse(telemetry['Current Motor Setting'].toString())));
+      HomeLatData.add(FlSpot(
+          time, double.parse(telemetry['Home Lat'].toString())));
+      HomeLongData.add(FlSpot(
+          time, double.parse(telemetry['Home Long'].toString())));
+      RudderConfigData.add(FlSpot(
+          time, double.parse(telemetry['Rudder Config Var'].toString())));
 
 
       // Update KPI state variables
@@ -91,6 +109,8 @@ class _MyHomePageState extends State<MyHomePage> {
       targetVelocity = double.parse(telemetry['Target vel'].toString());
       motorPowerSetting = double.parse(telemetry['Current Motor Setting'].toString());
       distanceToHome = double.parse(telemetry['Distance To Home'].toString());
+      HomeLat = double.parse(telemetry['Home Lat'].toString());
+      HomeLong = double.parse(telemetry['Home Long'].toString());
 
     });
   }
@@ -170,70 +190,82 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text('Real-Time Buoy Dashboard'),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: <Widget>[
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: <Widget>[
-              ElevatedButton(
-                onPressed: estop,
-                child: Text('E-Stop'),
-              ),
-              ElevatedButton(
-                onPressed: turnOn,
-                child: Text('Turn On'),
-              ),
-              ElevatedButton(
-                onPressed: saveToCsv,
-                child: Text('Save to CSV'),
-              ),
-            ],
-          ),
-          // KPI display row
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: <Widget>[
-              KpiDisplay(label: "Current Heading", value: "$currentHeading"),
-              KpiDisplay(label: "Target Heading", value: "$targetHeading"),
-            ],
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: <Widget>[
-              KpiDisplay(label: "Current Velocity", value: "$currentVelocity m/s"),
-              KpiDisplay(label: "Target Velocity", value: "$targetVelocity m/s"),
-            ],
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: <Widget>[
-              KpiDisplay(label: "Motor Power", value: "$motorPowerSetting%"),
-              KpiDisplay(label: "Distance to Home", value: "$distanceToHome m"),
-            ],
-          ),
+      body: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: <Widget>[
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                ElevatedButton(
+                  onPressed: estop,
+                  child: Text('E-Stop'),
+                ),
+                ElevatedButton(
+                  onPressed: turnOn,
+                  child: Text('Turn On'),
+                ),
+                ElevatedButton(
+                  onPressed: saveToCsv,
+                  child: Text('Save to CSV'),
+                ),
+              ],
+            ),
+            // KPI display row
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                KpiDisplay(label: "Current Heading", value: "$currentHeading"),
+                KpiDisplay(label: "Target Heading", value: "$targetHeading"),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                KpiDisplay(label: "Current Velocity", value: "$currentVelocity m/s"),
+                KpiDisplay(label: "Target Velocity", value: "$targetVelocity m/s"),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                KpiDisplay(label: "Motor Power", value: "$motorPowerSetting%"),
+                KpiDisplay(label: "Distance to Home", value: "$distanceToHome m"),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                KpiDisplay(label: "Home Point", value: "Lat $HomeLat \nLong $HomeLong"),
+                KpiDisplay(label: "Rudder", value: "$RudderConfig"),
+              ],
+            ),
 
 
-          Expanded(
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: LineChart(twolinesgetLineChartData(currentheadingData,targetheadingData,"hdg")),
+            Container(
+              height: 300,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: LineChart(twolinesgetLineChartData(currentheadingData,targetheadingData,"hdg")),
+              ),
             ),
-          ),
-          Expanded(
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: LineChart(twolinesgetLineChartData(currentvelocityData,targetvelocityData)),
+            Container(
+              height: 300,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: LineChart(twolinesgetLineChartData(currentvelocityData,targetvelocityData)),
+              ),
             ),
-          ),
-          Expanded(
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: LineChart(getLineChartData(motorData)),
+            Container(
+              height: 300,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: LineChart(getLineChartData(motorData)),
+              ),
             ),
-          ),
-        ],
-      ),
+          ],
+        ),
+      )
     );
   }
 }
