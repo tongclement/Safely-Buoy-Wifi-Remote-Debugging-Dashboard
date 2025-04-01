@@ -12,6 +12,6 @@ The code for the ESP-32 microcontroller on the robotic buoy is written in C on t
 While the code currently remains closed source, some snippets will be released shortly. 
 
 # What is this repository?
-This is the Remote Debugging Dashboard I developed using Python on top of the Streamlit library. 
+This is the Remote Debugging Dashboard for the buoy. V1 was developed using Python on top of the Streamlit library, and V2 was developed as a mobile app using Flutter
 
 Telemetry data is obtained by connecting to the ESP32 via WiFI (the ESP32 acts as an Access Point) and calling the REST API. The server is written in C on the ESP32 with ESP-IDF. Functionalities like updating the home point and emergency motor stop will be added to the dashboard in the future.
